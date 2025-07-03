@@ -1,0 +1,19 @@
+{
+  "identifier": 18656551,
+  "title": "nacho-2025-07-01",
+  "data": "15;python&#roll(A,V,S): A = angulo, V = velocidad, S = duracion\nasync def start_program():\n    await set_stabilization(True)   # Engage motor drive\n    await set_heading(0)            # Zero the heading so 0° is forward\n#ida\n    await roll(0,60,0.66)           #1 forward\n    await roll(90,5,0.66)           #2 right\n    await roll(0,60,0.66)           #3 forward`\n    await roll(270,20,0.66)         #4 left\n    await roll(0,45,0.66)           #5 forward\n    await roll(90,90,1)             #6 right\n    await roll(0,60,0.66)           #7 forward\n#vuelta\n    await roll(270,170,0.8)         #8 left\n    await roll(180,60,0.66)         #9 backward\n    await roll(90,20,0.66)          #10 right\n    await roll(180,50,0.8)          #11 backward\n    await roll(270,60,0.66)         #12 left\n    await roll(180,60,0.66)         #13 backward\n    await roll(90,60,0.66)          #14 right\n    await roll(180,90,0.66)         #15 backward\n    await roll(270,60,0.66)         #16 left\n    await roll(0,60,0.66)           #17 forward",
+  "program_type": "text",
+  "robots": [
+    {
+      "type": "MINI",
+      "name": "Sphero Mini",
+      "alias": "MINI",
+      "id": 7,
+      "prefix": "SM-",
+      "slug": "sphero-mini"
+    }
+  ],
+  "updatedAt": "2025-07-03T18:08:04.614998Z",
+  "userId": 3656845,
+  "name": "nacho-2025-07-01"
+}
